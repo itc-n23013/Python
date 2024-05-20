@@ -1,5 +1,4 @@
 def is_valid_chess_board(board):
-    # 駒の種類とそれぞれの数の上限
     piece_limits = {
         'king': 1,
         'queen': 1,
