@@ -4,9 +4,9 @@ def is_strong_password(password):
     pattern = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$'
     
     if re.match(pattern, password):
-        return True
+        return '良いパスワードです' 
     else:
-        return False
+        return '大文字と小文字、１つ以上の数字を含んでください' 
 
 passwords = [
     "Password123",

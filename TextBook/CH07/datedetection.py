@@ -17,9 +17,9 @@ def find_dates(text):
         month = match.group('month')
         year = match.group('year')
         if is_valid_date(day, month, year):
-            print(f"Valid date found: {day}/{month}/{year}")
+            print(f"{day}/{month}/{year}この日付は存在します:")
         else:
-            print(f"Invalid date found: {day}/{month}/{year}")
+            print(f"{day}/{month}/{year}この日付は存在しません:")
 
 text = "These are some dates: 29/02/2020, 31/04/2021, 15/08/2022, 31/11/2023."
 
